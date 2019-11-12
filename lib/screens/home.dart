@@ -10,14 +10,14 @@ class HomePage extends StatefulWidget {
 }
 
 class _HomePageState extends State<HomePage> {
-  String greeting = '¡Hola mundo desde Flutter!';
+  String source = 'Flutter';
 
   void changeTitle() {
     this.setState(() {
-      if (greeting == '¡Hola mundo desde Flutter!') {
-        this.greeting = '¡Hola mundo desde Stateful Widget!';
+      if (source == 'Flutter') {
+        source = 'Stateful Widget';
       } else {
-        this.greeting = '¡Hola mundo desde Flutter!';
+        source = 'Flutter';
       }
     });
   }
@@ -29,7 +29,7 @@ class _HomePageState extends State<HomePage> {
         title: Text(widget.title),
       ),
       body: Center(
-        child: Text(this.greeting),
+        child: Text('¡Hola mundo desde $source!'),
       ),
       floatingActionButton: FloatingActionButton(
         onPressed: changeTitle,

@@ -1,13 +1,13 @@
 import 'package:flutter/material.dart';
 import 'screens/home.dart';
 
-class HelloWorldApp extends StatelessWidget {
+class RockPaperScissorsApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Hello World',
+      title: 'Rock, Paper, Scissors',
       theme: ThemeData(primarySwatch: Colors.pink),
-      home: HomePage(title: 'Hola Mundo'),
+      home: HomePage(title: 'Rock, Paper, Scissors'),
     );
   }
 }
